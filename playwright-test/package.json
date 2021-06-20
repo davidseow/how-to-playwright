@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "BASEURL=https://marmelab.com npx playwright test",
-    "test:watch": "PWDEBUG=console BASEURL=https://marmelab.com npx playwright test --workers=1"
+    "test:watch": "PWDEBUG=console DEBUG=pw:api BASEURL=https://marmelab.com npx playwright test --workers=1"
   },
   "devDependencies": {
     "@playwright/test": "^1.12.2"
