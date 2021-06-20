@@ -1,2 +1,6 @@
+# general
 node_modules
 *.log
+
+# playwright-test
+playwright-test/state.json

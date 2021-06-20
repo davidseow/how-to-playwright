@@ -1,6 +1,10 @@
 {
+  "Jest - it block": {
+    "prefix": "jit",
+    "body": ["it('$1', () => {", "  $2// test code", "});"]
+  },
   "Playwright - test block": {
-    "prefix": "pit",
-    "body": ["it('$1', async () => {", "  $2// test code", "});"]
+    "prefix": "ptest",
+    "body": ["test('$1', async ({ page }) => {", "  $2// test code", "});"]
   }
 }
