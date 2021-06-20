@@ -4,3 +4,4 @@ node_modules
 
 # playwright-test
 playwright-test/state.json
+playwright-test/test-results
