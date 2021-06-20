@@ -17,4 +17,18 @@ describe("Dashboard", () => {
       "Welcome to the react-admin e-commerce demo"
     );
   });
+
+  test("can navigate to main section using left panel menu", async ({
+    page,
+  }) => {
+    const leftPanel = await page.$(".MuiDrawer-paperAnchorLeft");
+    const menuItem = await leftPanel.$('a[role="menuitem"]:has-text("Orders")');
+    await menuItem.click();
+
+    const pageTitle = await page.title();
+    const pageUrl = await page.url();
+
+    expect(pageTitle).toBe("Orders");
+    expect(pageUrl).toContain("/#/commands");
+  });
 });
