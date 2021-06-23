@@ -12,7 +12,7 @@ Checks are written against React Admin demo and will include the following
 - [ ] example mobile layout tests
 - [ ] example test against mock API
 - [ ] login once by reusing context
-- [ ] example command to run a single test
+- [x] example command to run a single test
 
 # Setup
 
@@ -22,4 +22,18 @@ Access test runner sub-folder (e.g. ./jest-playwright or ./playwright-test). And
 
 To trigger checks, just run `pnpm t`.
 
-If you would like to run checks in headed mode, `pnpm test:watch`
+If you would like to run checks in headed mode, `pnpm test:watch` (only in jest-playwright)
+
+To run against a single check/checks grouped within a describe block, `pnpm t -- --grep '<describe label|test label>'`. E.g.: `pnpm t -- --grep 'Customers'`
+
+# Troubleshooting
+
+## macOS firewall popup on every debug run
+
+With every debug run (in headed mode), you get prompted the following question - "Do you want to the application Chromium.app to accept incoming network connections?". Explanation is documented in [link](https://github.com/puppeteer/puppeteer/issues/4752)
+
+tldr; you can resolve this by running the following command
+
+```
+sudo codesign --force --deep --sign -  ~/Library/Caches/ms-playwright/chromium-*/chrome-mac/Chromium.app
+```
