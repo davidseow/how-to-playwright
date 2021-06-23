@@ -1,13 +1,16 @@
 {
   "scripts": {
-    "test": "BASEURL=https://marmelab.com jest -c ./jest-playwright.config.js",
-    "test:watch": "PWDEBUG=console BASEURL=https://marmelab.com jest -c ./jest-playwright.config.js --watch"
+    "test": "BASEURL=https://marmelab.com jest",
+    "test:watch": "PWDEBUG=console BASEURL=https://marmelab.com jest --watch "
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.5",
     "expect-playwright": "^0.5.1",
     "jest": "^26.6.3",
     "jest-playwright-preset": "^1.6.1",
     "playwright": "^1.12.2",
-    "playwright-core": "^1.12.2"
+    "typescript": "^4.3.4"
   }
 }

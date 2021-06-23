@@ -13,6 +13,6 @@ describe("Login", () => {
     await page.click('text="Sign in"');
 
     const profileHeader = await page.$('[aria-label="Profile"]');
-    expect(await profileHeader.textContent()).toContain("Jane Doe");
+    expect(await profileHeader?.textContent()).toContain("Jane Doe");
   });
 });
