@@ -1,9 +1,9 @@
 {
-  "Jest - it block": {
-    "prefix": "jit",
-    "body": ["it('$1', () => {", "  $2// test code", "});"]
+  "Playwright - beforeEach": {
+    "prefix": "pbefore",
+    "body": ["beforeEach(async ({ page }) => {", "  $2// setup", "});"]
   },
-  "Playwright - test block": {
+  "Playwright - test": {
     "prefix": "ptest",
     "body": ["test('$1', async ({ page }) => {", "  $2// test code", "});"]
   }

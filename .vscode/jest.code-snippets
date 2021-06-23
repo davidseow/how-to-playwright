@@ -1,0 +1,10 @@
+{
+  "Jest - beforeAll": {
+    "prefix": "jbefore",
+    "body": ["beforeAll(async () => {", "  $2// setup", "});"]
+  },
+  "Jest - it": {
+    "prefix": "jit",
+    "body": ["it('$1', () => {", "  $2// test code", "});"]
+  }
+}
