@@ -11,7 +11,8 @@ Checks are written against React Admin demo and will include the following
 - [x] example tests
 - [ ] example mobile layout tests
 - [ ] example test against mock API
-- [ ] login once by reusing context
+- [ ] example test against mock websocket
+- [ ] login once by reusing context (added for @playwright/test)
 - [x] example command to run a single test
 
 # Setup
