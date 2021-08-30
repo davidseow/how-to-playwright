@@ -6,6 +6,8 @@ on:
 
 jobs:
   playwright-jest:
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: ~/.pnpm-store/pw-browsers
     defaults:
       run:
         shell: bash
@@ -21,13 +23,15 @@ jobs:
         id: pnpm-store
         with:
           path: ~/.pnpm-store/v3
-          key: ${{ runner.os }}-pnpm-jp-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: v1-${{ runner.os }}-pnpm-jp-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-jp-
+            v1-${{ runner.os }}-pnpm-jp-
       - run: pnpm i --frozen-lockfile
       - run: pnpm test
 
   playwright-test-runner:
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: ~/.pnpm-store/pw-browsers
     defaults:
       run:
         shell: bash
@@ -39,12 +43,5 @@ jobs:
       - uses: pnpm/action-setup@v2.0.1
         with:
           version: 6
-      - uses: actions/cache@v2
-        id: pnpm-store
-        with:
-          path: ~/.pnpm-store/v3
-          key: ${{ runner.os }}-pnpm-pwt-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-pwt-
       - run: pnpm i --frozen-lockfile
       - run: pnpm test
