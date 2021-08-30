@@ -44,4 +44,5 @@ jobs:
         with:
           version: 6
       - run: pnpm i --frozen-lockfile
+      - run: npx playwright install chromium
       - run: pnpm test
