@@ -1,0 +1,50 @@
+name: "Build"
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  playwright-jest:
+    defaults:
+      run:
+        shell: bash
+        working-directory: jest-playwright
+    name: Playwright with Jest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6
+      - uses: actions/cache@v2
+        id: pnpm-store
+        with:
+          path: ~/.pnpm-store/v3
+          key: ${{ runner.os }}-pnpm-jp-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-jp-
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm test
+
+  playwright-test-runner:
+    defaults:
+      run:
+        shell: bash
+        working-directory: playwright-test
+    name: Playwright test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6
+      - uses: actions/cache@v2
+        id: pnpm-store
+        with:
+          path: ~/.pnpm-store/v3
+          key: ${{ runner.os }}-pnpm-pwt-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-pwt-
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm test
