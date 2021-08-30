@@ -4,6 +4,6 @@
     "test:watch": "PWDEBUG=console DEBUG=pw:api BASEURL=https://marmelab.com npx playwright test --workers=1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.12.2"
+    "@playwright/test": "^1.14.1"
   }
 }
