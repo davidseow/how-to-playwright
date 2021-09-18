@@ -2,9 +2,9 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.15.5
-  '@types/jest': ^26.0.24
+  '@types/jest': ^27.0.1
   babel-jest: ^27.2.0
-  expect-playwright: ^0.5.1
+  expect-playwright: ^0.8.0
   jest: ^26.6.3
   jest-playwright-preset: ^1.7.0
   playwright: ^1.14.1
@@ -12,9 +12,9 @@ specifiers:
 
 devDependencies:
   '@babel/core': 7.15.5
-  '@types/jest': 26.0.24
+  '@types/jest': 27.0.1
   babel-jest: 27.2.0_@babel+core@7.15.5
-  expect-playwright: 0.5.1
+  expect-playwright: 0.8.0
   jest: 26.6.3
   jest-playwright-preset: 1.7.0_jest@26.6.3
   playwright: 1.14.1
@@ -691,11 +691,11 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/26.0.24:
-    resolution: {integrity: sha512-E/X5Vib8BWqZNRlDxj9vYXhsDwPYbPINqKF9BsnSoon4RQ0D9moEuLD8txgyypFLH7J4+Lho9Nr/c8H0Fi+17w==}
+  /@types/jest/27.0.1:
+    resolution: {integrity: sha512-HTLpVXHrY69556ozYkcq47TtQJXpcWAWfkoqz+ZGz2JnmZhzlRjprCIyFnetSy8gpDWwTTGBcRVv1J1I1vBrHw==}
     dependencies:
-      jest-diff: 26.6.2
-      pretty-format: 26.6.2
+      jest-diff: 27.2.0
+      pretty-format: 27.2.0
     dev: true
 
   /@types/node/16.9.2:
@@ -812,6 +812,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       color-convert: 2.0.1
+    dev: true
+
+  /ansi-styles/5.2.0:
+    resolution: {integrity: sha512-Cxwpt2SfTzTtXcfOlzGEee8O+c+MmUgGrNiBcXnuWxuFJHe6a5Hz7qwhwe5OgaSYI0IJvkLqWX1ASG+cJOkEiA==}
+    engines: {node: '>=10'}
     dev: true
 
   /anymatch/2.0.0:
@@ -1410,6 +1415,11 @@ packages:
     engines: {node: '>= 10.14.2'}
     dev: true
 
+  /diff-sequences/27.0.6:
+    resolution: {integrity: sha512-ag6wfpBFyNXZ0p8pcuIDS//D8H062ZQJ3fzYxjpmeKjnz8W4pekL3AI8VohmyZmsWW2PWaHgjsmqR6L13101VQ==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dev: true
+
   /domexception/2.0.1:
     resolution: {integrity: sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==}
     engines: {node: '>=8'}
@@ -1547,14 +1557,12 @@ packages:
       os-homedir: 1.0.2
     dev: true
 
-  /expect-playwright/0.5.1:
-    resolution: {integrity: sha512-2S5LSWyLHvriJ5rUXReQYAOa9Mi0oQ6nT9DtlURdWV+zfvJ1hYvPC6/solEi8Kg8ZqmjVVACy9AsvpJEC6FAwg==}
-    peerDependencies:
-      playwright-core: ^1.12.0
-    dev: true
-
   /expect-playwright/0.7.2:
     resolution: {integrity: sha512-5o9si+8SUi68QVI0CRVv8tvTjZinpJWRSfQ3GP6v0DvlK55lDgFvD79r6A/NU+EUawrBc62qP30MxzOUnXNJZQ==}
+    dev: true
+
+  /expect-playwright/0.8.0:
+    resolution: {integrity: sha512-+kn8561vHAY+dt+0gMqqj1oY+g5xWrsuGMk4QGxotT2WS545nVqqjs37z6hrYfIuucwqthzwJfCJUEYqixyljg==}
     dev: true
 
   /expect/26.6.2:
@@ -2299,6 +2307,16 @@ packages:
       pretty-format: 26.6.2
     dev: true
 
+  /jest-diff/27.2.0:
+    resolution: {integrity: sha512-QSO9WC6btFYWtRJ3Hac0sRrkspf7B01mGrrQEiCW6TobtViJ9RWL0EmOs/WnBsZDsI/Y2IoSHZA2x6offu0sYw==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      chalk: 4.1.2
+      diff-sequences: 27.0.6
+      jest-get-type: 27.0.6
+      pretty-format: 27.2.0
+    dev: true
+
   /jest-docblock/26.0.0:
     resolution: {integrity: sha512-RDZ4Iz3QbtRWycd8bUEPxQsTlYazfYn/h5R65Fc6gOfwozFhoImx+affzky/FFBuqISPTqjXomoIGJVKBWoo0w==}
     engines: {node: '>= 10.14.2'}
@@ -2350,6 +2368,11 @@ packages:
   /jest-get-type/26.3.0:
     resolution: {integrity: sha512-TpfaviN1R2pQWkIihlfEanwOXK0zcxrKEE4MlU6Tn7keoXdN6/3gK/xl0yEh8DOunn5pOVGKf8hB4R9gVh04ig==}
     engines: {node: '>= 10.14.2'}
+    dev: true
+
+  /jest-get-type/27.0.6:
+    resolution: {integrity: sha512-XTkK5exIeUbbveehcSR8w0bhH+c0yloW/Wpl+9vZrjzztCPWrxhHwkIFpZzCt71oRBsgxmuUfxEqOYoZI2macg==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dev: true
 
   /jest-haste-map/26.6.2:
@@ -3377,6 +3400,16 @@ packages:
       '@jest/types': 26.6.2
       ansi-regex: 5.0.1
       ansi-styles: 4.3.0
+      react-is: 17.0.2
+    dev: true
+
+  /pretty-format/27.2.0:
+    resolution: {integrity: sha512-KyJdmgBkMscLqo8A7K77omgLx5PWPiXJswtTtFV7XgVZv2+qPk6UivpXXO+5k6ZEbWIbLoKdx1pZ6ldINzbwTA==}
+    engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
+    dependencies:
+      '@jest/types': 27.1.1
+      ansi-regex: 5.0.1
+      ansi-styles: 5.2.0
       react-is: 17.0.2
     dev: true
 
