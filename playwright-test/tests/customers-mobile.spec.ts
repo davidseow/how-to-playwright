@@ -16,9 +16,10 @@ describe("Customers", () => {
     const pageTitle = await page.title();
     expect(pageTitle).toBe("Posters Galore Administration");
 
-    const reviewList = await page.$$(
-      "#main-content .list-page .MuiCardHeader-root"
-    );
+    const reviewTableRow = "#main-content .list-page .MuiCardHeader-root";
+    await page.waitForSelector(reviewTableRow);
+
+    const reviewList = await page.$$(reviewTableRow);
     expect(reviewList.length).toBe(25);
   });
 
