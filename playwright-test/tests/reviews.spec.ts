@@ -1,4 +1,4 @@
-import { test, expect, chromium } from "@playwright/test";
+import test from "../fixtures/base-fixture";
 test.use({ storageState: "state.json" });
 
 const { beforeEach, describe } = test;

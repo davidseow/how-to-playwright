@@ -1,10 +1,11 @@
-import test from "../fixtures/base-fixture";
+import test from "../fixtures/mobile-fixture";
+
 test.use({ storageState: "state.json" });
 
-const { beforeEach, describe } = test;
+const { beforeEach, describe, expect } = test;
 const { BASEURL } = process.env;
 
-describe("Customers", () => {
+describe.only("Customers", () => {
   beforeEach(async ({ page }) => {
     await page.goto(`${BASEURL}/react-admin-demo/#/customers`, {
       waitUntil: "networkidle",
@@ -15,7 +16,9 @@ describe("Customers", () => {
     const pageTitle = await page.title();
     expect(pageTitle).toBe("Posters Galore Administration");
 
-    const reviewList = await page.$$("#main-content .list-page table tbody tr");
+    const reviewList = await page.$$(
+      "#main-content .list-page .MuiCardHeader-root"
+    );
     expect(reviewList.length).toBe(25);
   });
 
