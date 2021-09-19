@@ -1,6 +1,6 @@
-import { test } from "@playwright/test";
+import { test as base } from "@playwright/test";
 
-test.use({
+const test = base.extend<{}>({
   screenshot: "only-on-failure",
 });
 

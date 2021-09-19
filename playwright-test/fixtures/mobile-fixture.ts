@@ -1,8 +1,7 @@
+import base from "./base-fixture";
 import { devices } from "@playwright/test";
 
-import test from "./base-fixture";
-
-test.use({
+const test = base.extend<{}>({
   contextOptions: { ...devices["iPhone 11"], isMobile: true },
 });
 

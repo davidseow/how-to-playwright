@@ -12,9 +12,6 @@ describe("Reviews", () => {
   });
 
   test("should display a list of reviews", async ({ page }) => {
-    // const pageTitle = await page.title();
-    // expect(pageTitle).toBe("Reviews");
-
     const reviewList = await page.$$("#main-content .list-page table tbody tr");
     expect(reviewList.length).toBe(25);
   });
