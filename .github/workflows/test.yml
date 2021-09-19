@@ -28,6 +28,12 @@ jobs:
             v1-${{ runner.os }}-pnpm-jp-
       - run: pnpm i --frozen-lockfile
       - run: pnpm test
+      - if: ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: Failed test screenshots
+          path: "screenshots"
+          if-no-files-found: ignore
 
   playwright-test-runner:
     env:
@@ -46,3 +52,9 @@ jobs:
       - run: pnpm i --frozen-lockfile
       - run: npx playwright install chromium
       - run: pnpm test
+      - if: ${{ failure() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: Failed test screenshots
+          path: "screenshots"
+          if-no-files-found: ignore
