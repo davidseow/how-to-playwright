@@ -1,4 +1,4 @@
-name: "Build"
+name: "Test"
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
       run:
         shell: bash
         working-directory: playwright-test
-    name: Playwright test
+    name: Playwright Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
