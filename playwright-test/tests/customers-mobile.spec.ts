@@ -5,7 +5,7 @@ test.use({ storageState: "state.json" });
 const { beforeEach, describe, expect } = test;
 const { BASEURL } = process.env;
 
-describe.only("Customers", () => {
+describe("Customers", () => {
   beforeEach(async ({ page }) => {
     await page.goto(`${BASEURL}/react-admin-demo/#/customers`, {
       waitUntil: "networkidle",

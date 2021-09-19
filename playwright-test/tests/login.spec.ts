@@ -1,5 +1,5 @@
 import test from "../fixtures/base-fixture";
-const { beforeEach, describe } = test;
+const { beforeEach, describe, expect } = test;
 
 const { BASEURL } = process.env;
 

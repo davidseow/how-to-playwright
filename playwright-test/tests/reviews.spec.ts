@@ -1,7 +1,7 @@
 import test from "../fixtures/base-fixture";
 test.use({ storageState: "state.json" });
 
-const { beforeEach, describe } = test;
+const { beforeEach, describe, expect } = test;
 const { BASEURL } = process.env;
 
 describe("Reviews", () => {
