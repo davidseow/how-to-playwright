@@ -10,8 +10,7 @@ Checks are written against React Admin demo and will include the following
 - [x] screenshot on test failure
 - [x] example tests
 - [x] example mobile layout tests (added for @playwright/test)
-- [ ] example test against mock API
-- [ ] example test against mock websocket
+- [x] example test that manipulates network requests
 - [x] login once by reusing context (added for @playwright/test)
 - [x] example command to run a single test
 
