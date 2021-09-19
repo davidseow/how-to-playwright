@@ -7,7 +7,7 @@ Example Playwright test setup for test runners listed below.
 
 Checks are written against React Admin demo and will include the following
 
-- [ ] screenshot on test failure
+- [x] screenshot on test failure
 - [x] example tests
 - [ ] example mobile layout tests
 - [ ] example test against mock API

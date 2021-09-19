@@ -18,7 +18,7 @@ describe("Dashboard", () => {
 
   it("should display dashboard", async () => {
     const pageCard = await page.$("#main-content .MuiPaper-elevation1");
-    expect(await pageCard.textContent()).toContain(
+    expect(await pageCard?.textContent()).toContain(
       "Welcome to the react-admin e-commerce demo"
     );
   });

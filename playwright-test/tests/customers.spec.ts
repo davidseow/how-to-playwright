@@ -12,8 +12,8 @@ describe("Customers", () => {
   });
 
   test("should display a list of customers", async ({ page }) => {
-    // const pageTitle = await page.title();
-    // expect(pageTitle).toBe("Customers");
+    const pageTitle = await page.title();
+    expect(pageTitle).toBe("Posters Galore Administration");
 
     const reviewList = await page.$$("#main-content .list-page table tbody tr");
     expect(reviewList.length).toBe(25);

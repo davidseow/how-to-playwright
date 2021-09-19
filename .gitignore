@@ -3,5 +3,6 @@ node_modules
 *.log
 
 # playwright-test
+screenshots
 playwright-test/state.json
 playwright-test/test-results

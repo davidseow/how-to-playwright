@@ -4,4 +4,5 @@ module.exports = {
   transform: {
     "^.+\\.ts$": "babel-jest",
   },
+  testEnvironment: "./jest.custom-environment.js",
 };
