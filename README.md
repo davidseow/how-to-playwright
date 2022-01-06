@@ -13,6 +13,7 @@ Checks are written against React Admin demo and will include the following
 - [x] example test that manipulates network requests
 - [x] login once by reusing context (added for @playwright/test)
 - [x] example command to run a single test
+- [x] [Monkey testing with Gremlin.js](playwright-test/tests/monkey-testing.spec.ts)
 
 # Setup
 
