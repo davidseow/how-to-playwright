@@ -18,7 +18,7 @@ test("should display fallback svg when avatar thumbnail fails to load", async ({
   await page.waitForTimeout(1000);
 
   const fallbackAvatarImage = await page.$$(
-    ".MuiList-root .MuiAvatar-root.MuiAvatar-circle svg"
+    ".MuiCard-root .MuiList-root .MuiListItem-root .MuiAvatar-circular svg"
   );
 
   expect(fallbackAvatarImage.length).toBeGreaterThan(1);

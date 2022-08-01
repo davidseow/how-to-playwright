@@ -30,6 +30,9 @@ describe("Customers", () => {
       email: "test@email.com",
     };
 
+    // close burger menu before clicking on the create button
+    await page.click('.MuiBackdrop-root[aria-hidden="true"]');
+
     await page.click('a[aria-label="Create"]');
     for (const property in customer) {
       await page.fill(`#${property}`, customer[property]);
