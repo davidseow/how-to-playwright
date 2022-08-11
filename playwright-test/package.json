@@ -4,7 +4,8 @@
     "test:watch": "PWDEBUG=console DEBUG=pw:api BASEURL=https://marmelab.com npx playwright test --workers=1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.24.2",
+    "@playwright/test": "^1.25.0",
+    "@types/node": "^18.7.1",
     "gremlins.js": "^2.2.0"
   }
 }

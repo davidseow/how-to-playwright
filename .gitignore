@@ -6,3 +6,5 @@ node_modules
 screenshots
 playwright-test/state.json
 playwright-test/test-results
+playwright-test/playwright-report/
+playwright/.cache/
