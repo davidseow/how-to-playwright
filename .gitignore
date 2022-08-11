@@ -3,8 +3,7 @@ node_modules
 *.log
 
 # playwright-test
-screenshots
+test-results
 playwright-test/state.json
-playwright-test/test-results
 playwright-test/playwright-report/
 playwright/.cache/
