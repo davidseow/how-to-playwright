@@ -1,11 +1,9 @@
 import test from "../fixtures/base-fixture";
 const { beforeEach, describe, expect } = test;
 
-const { BASEURL } = process.env;
-
 describe("Login", () => {
   beforeEach(async ({ page }) => {
-    await page.goto(`${BASEURL}/react-admin-demo`, {
+    await page.goto("/react-admin-demo", {
       waitUntil: "networkidle",
     });
   });
@@ -16,6 +14,6 @@ describe("Login", () => {
     await page.click('text="Sign in"');
 
     const profileHeader = await page.$('[aria-label="Profile"]');
-    expect(await profileHeader.textContent()).toContain("Jane Doe");
+    expect(await profileHeader?.textContent()).toContain("Jane Doe");
   });
 });

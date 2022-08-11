@@ -2,11 +2,10 @@ import test from "../fixtures/base-fixture";
 test.use({ storageState: "state.json" });
 
 const { beforeEach, describe, expect } = test;
-const { BASEURL } = process.env;
 
 describe("Reviews", () => {
   beforeEach(async ({ page }) => {
-    await page.goto(`${BASEURL}/react-admin-demo/#/reviews`, {
+    await page.goto("/react-admin-demo/#/reviews", {
       waitUntil: "networkidle",
     });
   });
