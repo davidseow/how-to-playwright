@@ -11,11 +11,10 @@ describe("Customers", () => {
   });
 
   test("should display a list of customers", async ({ page }) => {
-    const pageTitle = await page.title();
-    expect(pageTitle).toBe("Posters Galore Administration");
-
-    const reviewList = await page.$$("#main-content .list-page table tbody tr");
-    expect(reviewList.length).toBe(25);
+    const customerRow = await page.locator(
+      "#main-content .list-page table tbody .MuiTableRow-root"
+    );
+    expect(await customerRow.count()).toBe(25);
   });
 
   test("should be able to add new customer", async ({ page }) => {
