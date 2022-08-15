@@ -11,12 +11,16 @@ test("should display fallback svg when avatar thumbnail fails to load", async ({
   await page.goto("/react-admin-demo", {
     waitUntil: "networkidle",
   });
-
   await page.waitForTimeout(1000);
 
-  const fallbackAvatarImage = await page.$$(
-    ".MuiCard-root .MuiList-root .MuiListItem-root .MuiAvatar-circular svg"
+  const newCustomersCard = await page.locator(".MuiCard-root", { hasText: /new customers/i });
+
+  // chaining, locator find again instead of <>.filter to return multiple elements
+  const fallbackAvatarImages = await newCustomersCard.locator(
+    ".MuiList-root .MuiListItem-root .MuiAvatar-circular svg"
   );
 
-  expect(fallbackAvatarImage.length).toBeGreaterThan(1);
+  // nb: locator.isVisible() does not wait for element to be visible, see: https://github.com/microsoft/playwright/pull/9200
+  await fallbackAvatarImages.first().waitFor();
+  expect(await fallbackAvatarImages.count()).toBeGreaterThan(1);
 });

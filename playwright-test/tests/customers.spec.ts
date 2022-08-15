@@ -11,10 +11,14 @@ describe("Customers", () => {
   });
 
   test("should display a list of customers", async ({ page }) => {
-    const customerRow = await page.locator(
-      "#main-content .list-page table tbody .MuiTableRow-root"
+    // checkboxes specifically because table row is rendered before row text 🤷‍♂️
+    const customerRows = await page.locator(
+      "#main-content .list-page table tbody .MuiTableRow-root [aria-label='Select this row']"
     );
-    expect(await customerRow.count()).toBe(25);
+
+    // nb: locator.isVisible() does not wait for element to be visible, see: https://github.com/microsoft/playwright/pull/9200
+    await customerRows.first().waitFor();
+    expect(await customerRows.count()).toBe(25);
   });
 
   test("should be able to add new customer", async ({ page }) => {

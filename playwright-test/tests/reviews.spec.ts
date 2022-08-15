@@ -11,7 +11,13 @@ describe("Reviews", () => {
   });
 
   test("should display a list of reviews", async ({ page }) => {
-    const reviewList = await page.$$("#main-content .list-page table tbody tr");
-    expect(reviewList.length).toBe(25);
+    // checkboxes specifically because table row is rendered before row text 🤷‍♂️
+    const reviewRows = await page.locator(
+      "#main-content .list-page table tbody .MuiTableRow-root [aria-label='Select this row']"
+    );
+
+    // nb: locator.isVisible() does not wait for element to be visible, see: https://github.com/microsoft/playwright/pull/9200
+    await reviewRows.first().waitFor();
+    expect(await reviewRows.count()).toBe(25);
   });
 });
