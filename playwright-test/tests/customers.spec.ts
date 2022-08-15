@@ -2,21 +2,23 @@ import test from "../fixtures/base-fixture";
 test.use({ storageState: "state.json" });
 
 const { beforeEach, describe, expect } = test;
-const { BASEURL } = process.env;
 
 describe("Customers", () => {
   beforeEach(async ({ page }) => {
-    await page.goto(`${BASEURL}/react-admin-demo/#/customers`, {
+    await page.goto("/react-admin-demo/#/customers", {
       waitUntil: "networkidle",
     });
   });
 
   test("should display a list of customers", async ({ page }) => {
-    const pageTitle = await page.title();
-    expect(pageTitle).toBe("Posters Galore Administration");
+    // checkboxes specifically because table row is rendered before row text 🤷‍♂️
+    const customerRows = await page.locator(
+      "#main-content .list-page table tbody .MuiTableRow-root [aria-label='Select this row']"
+    );
 
-    const reviewList = await page.$$("#main-content .list-page table tbody tr");
-    expect(reviewList.length).toBe(25);
+    // nb: locator.isVisible() does not wait for element to be visible, see: https://github.com/microsoft/playwright/pull/9200
+    await customerRows.first().waitFor();
+    expect(await customerRows.count()).toBe(25);
   });
 
   test("should be able to add new customer", async ({ page }) => {

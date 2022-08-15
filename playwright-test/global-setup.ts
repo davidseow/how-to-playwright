@@ -1,11 +1,10 @@
-import { chromium } from "@playwright/test";
+import { chromium, FullConfig } from "@playwright/test";
 
-const { BASEURL } = process.env;
-
-async function globalSetup() {
+async function globalSetup(config: FullConfig) {
+  const { baseURL } = config.projects[0].use;
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto(`${BASEURL}/react-admin-demo/#/`, {
+  await page.goto(`${baseURL}/react-admin-demo/#/`, {
     waitUntil: "networkidle",
   });
 

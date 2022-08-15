@@ -1,7 +1,7 @@
-name: "Test"
+name: "Quality"
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Failed test screenshots
-          path: "screenshots"
+          path: "jest-playwright/test-results/"
           if-no-files-found: ignore
 
   playwright-test-runner:
@@ -56,5 +56,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Failed test screenshots
-          path: "screenshots"
+          path: "playwright-test/test-results/"
           if-no-files-found: ignore

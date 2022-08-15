@@ -1,5 +1,4 @@
-const PlaywrightEnvironment =
-  require("jest-playwright-preset/lib/PlaywrightEnvironment").default;
+const PlaywrightEnvironment = require("jest-playwright-preset/lib/PlaywrightEnvironment").default;
 
 class CustomEnvironment extends PlaywrightEnvironment {
   async setup() {
@@ -18,7 +17,7 @@ class CustomEnvironment extends PlaywrightEnvironment {
       const specName = event.test.name.replace(/\W/g, "-");
 
       await this.global.page.screenshot({
-        path: `screenshots/${parentName}_${specName}.png`,
+        path: `test-results/${parentName}_${specName}.png`,
       });
     }
   }
