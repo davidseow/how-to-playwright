@@ -39,12 +39,12 @@ describe("Customers", () => {
       // customise gremlin.js
       const customClicker = gremlins.species.clicker({
         clickTypes: ["click"],
-        canClick: (element) => element.closest("#main-content"),
+        canClick: (element) => element.closest("#main-content .MuiCardContent-root"),
       });
 
       const customToucher = gremlins.species.toucher({
         touchTypes: ["tap", "gesture"],
-        canTouch: (element) => element.closest("#main-content"),
+        canTouch: (element) => element.closest("#main-content .MuiCardContent-root"),
       });
 
       return gremlins
