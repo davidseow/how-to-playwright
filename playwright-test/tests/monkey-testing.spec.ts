@@ -32,10 +32,20 @@ describe("Monkey testing", () => {
       // simulate error
       const testElemsToError = ["#main-content .ra-input", "#main-content input"];
 
+      console.log("🚩 Test log from browser..");
+
+      for (let count = 0; count < 11; count++) {
+        Promise.reject(new Error("sad :("));
+      }
+
       testElemsToError.forEach((elem) => {
         document.querySelectorAll(elem).forEach((elem, index) => {
           elem.addEventListener("click", function (e) {
-            throw new Error(`Error ${index}`);
+            throw new Error(`Click - error ${index}`);
+          });
+
+          elem.addEventListener("touchstart", function (e) {
+            throw new Error(`Touch error ${index}`);
           });
         });
       });
@@ -60,6 +70,6 @@ describe("Monkey testing", () => {
     });
 
     await page.locator("text=Identity").waitFor();
-    expect(errors.length).toBeGreaterThan(0); // inverting this so it passes in CI
+    expect(errors.length).toBeGreaterThan(11); // inverting this so it passes in CI
   });
 });
