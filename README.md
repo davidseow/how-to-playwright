@@ -16,6 +16,7 @@ Checks are written against React Admin demo and will include the following
 - [x] [Monkey testing with Gremlin.js](playwright-test/tests/monkey-testing.spec.ts)
 - [x] Fullscreen capture on test failure
 - [x] Override/extend test fixtures
+- [x] Page Object with custom type
 
 # Setup
 
