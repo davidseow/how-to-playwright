@@ -4,7 +4,7 @@ test.use({ storageState: "state.json" });
 
 const { beforeEach, describe, expect } = test;
 
-describe("Customers", () => {
+describe("Monkey testing", () => {
   let errors = [];
 
   beforeEach(async ({ page }) => {
@@ -30,9 +30,13 @@ describe("Customers", () => {
 
     await page.evaluate(() => {
       // simulate error
-      document.querySelectorAll("#main-content input").forEach((input, index) => {
-        input.addEventListener("click", function (e) {
-          throw new Error(`Error ${index}`);
+      const testElemsToError = ["#main-content .ra-input", "#main-content input"];
+
+      testElemsToError.forEach((elem) => {
+        document.querySelectorAll(elem).forEach((elem, index) => {
+          elem.addEventListener("click", function (e) {
+            throw new Error(`Error ${index}`);
+          });
         });
       });
 
@@ -49,13 +53,13 @@ describe("Customers", () => {
 
       return gremlins
         .createHorde({
-          randomizer: new gremlins.Chance(1234), // repeatable
+          randomizer: new gremlins.Chance(4321), // repeatable
           species: [gremlins.species.formFiller(), customClicker, customToucher],
         })
         .unleash();
     });
 
-    await page.waitForSelector("text=Identity");
+    await page.locator("text=Identity").waitFor();
     expect(errors.length).toBeGreaterThan(0); // inverting this so it passes in CI
   });
 });
