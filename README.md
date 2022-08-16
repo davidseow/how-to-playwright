@@ -15,6 +15,7 @@ Checks are written against React Admin demo and will include the following
 - [x] example command to run a single test
 - [x] [Monkey testing with Gremlin.js](playwright-test/tests/monkey-testing.spec.ts)
 - [x] Fullscreen capture on test failure
+- [x] Override/extend test fixtures
 
 # Setup
 
