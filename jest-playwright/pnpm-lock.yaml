@@ -1,14 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/core': ^7.18.10
-  '@types/jest': ^27.5.2
-  babel-jest: ^27.5.1
-  expect-playwright: ^0.8.0
-  jest: ^27.5.1
-  jest-playwright-preset: ^1.7.2
-  playwright: ^1.24.2
-  typescript: ^4.7.4
+  '@babel/core': 7.18.10
+  '@types/jest': 27.5.2
+  babel-jest: 27.5.1
+  expect-playwright: 0.8.0
+  jest: 27.5.1
+  jest-playwright-preset: 1.7.2
+  playwright: 1.25.0
+  typescript: 4.7.4
 
 devDependencies:
   '@babel/core': 7.18.10
@@ -17,7 +17,7 @@ devDependencies:
   expect-playwright: 0.8.0
   jest: 27.5.1
   jest-playwright-preset: 1.7.2_jest@27.5.1
-  playwright: 1.24.2
+  playwright: 1.25.0
   typescript: 4.7.4
 
 packages:
@@ -188,6 +188,8 @@ packages:
     resolution: {integrity: sha512-TYk3OA0HKL6qNryUayb5UUEhM/rkOQozIBEA5ITXh5DWrSp0TlUQXMyZmnWxG/DizSWBeeQ0Zbc5z8UGaaqoeg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.18.10
     dev: true
 
   /@babel/plugin-syntax-async-generators/7.8.4_@babel+core@7.18.10:
@@ -1081,7 +1083,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
   /convert-source-map/1.8.0:
@@ -2601,13 +2603,19 @@ packages:
     hasBin: true
     dev: true
 
-  /playwright/1.24.2:
-    resolution: {integrity: sha512-iMWDLgaFRT+7dXsNeYwgl8nhLHsUrzFyaRVC+ftr++P1dVs70mPrFKBZrGp1fOKigHV9d1syC03IpPbqLKlPsg==}
+  /playwright-core/1.25.0:
+    resolution: {integrity: sha512-kZ3Jwaf3wlu0GgU0nB8UMQ+mXFTqBIFz9h1svTlNduNKjnbPXFxw7mJanLVjqxHJRn62uBfmgBj93YHidk2N5Q==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /playwright/1.25.0:
+    resolution: {integrity: sha512-Z+pQNWI17Qx/tHhnmgMmPsptsisXpKgAnUvYv98kctlHUJaqMt2400P8kTw9vEPoC0xdxqu0JhxO7pDTmaaIKw==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.24.2
+      playwright-core: 1.25.0
     dev: true
 
   /prelude-ls/1.1.2:

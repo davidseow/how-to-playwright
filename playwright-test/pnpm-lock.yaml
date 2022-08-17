@@ -1,9 +1,9 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@playwright/test': ^1.25.0
-  '@types/node': ^18.7.1
-  gremlins.js: ^2.2.0
+  '@playwright/test': 1.25.0
+  '@types/node': 18.7.1
+  gremlins.js: 2.2.0
 
 devDependencies:
   '@playwright/test': 1.25.0
