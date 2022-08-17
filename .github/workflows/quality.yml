@@ -15,7 +15,7 @@ jobs:
     name: Playwright with Jest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 6
@@ -45,7 +45,7 @@ jobs:
     name: Playwright Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 6
