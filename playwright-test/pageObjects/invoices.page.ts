@@ -1,7 +1,5 @@
 import { Locator, Page } from "@playwright/test";
 
-type SortLabel = "id" | "customer" | "address" | "order";
-
 export enum SortType {
   "id" = "id",
   "customer" = "customer_id",
