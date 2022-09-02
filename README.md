@@ -17,6 +17,7 @@ Checks are written against React Admin demo and will include the following
 - [x] Fullscreen capture on test failure
 - [x] Override/extend test fixtures
 - [x] Page Object with custom type
+- [x] Enable trace recording for a test block
 
 # Setup
 
