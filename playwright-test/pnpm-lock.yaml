@@ -1,24 +1,24 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@playwright/test': 1.25.2
+  '@playwright/test': 1.26.0
   '@types/node': 18.7.1
   gremlins.js: 2.2.0
 
 devDependencies:
-  '@playwright/test': 1.25.2
+  '@playwright/test': 1.26.0
   '@types/node': 18.7.1
   gremlins.js: 2.2.0
 
 packages:
 
-  /@playwright/test/1.25.2:
-    resolution: {integrity: sha512-6qPznIR4Fw02OMbqXUPMG6bFFg1hDVNEdihKy0t9K0dmRbus1DyP5Q5XFQhGwEHQkLG5hrSfBuu9CW/foqhQHQ==}
+  /@playwright/test/1.26.0:
+    resolution: {integrity: sha512-D24pu1k/gQw3Lhbpc38G5bXlBjGDrH5A52MsrH12wz6ohGDeQ+aZg/JFSEsT/B3G8zlJe/EU4EkJK74hpqsjEg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.7.1
-      playwright-core: 1.25.2
+      playwright-core: 1.26.0
     dev: true
 
   /@types/node/18.7.1:
@@ -41,8 +41,8 @@ packages:
       core-js: 3.24.1
     dev: true
 
-  /playwright-core/1.25.2:
-    resolution: {integrity: sha512-0yTbUE9lIddkEpLHL3u8PoCL+pWiZtj5A/j3U7YoNjcmKKDGBnCrgHJMzwd2J5vy6l28q4ki3JIuz7McLHhl1A==}
+  /playwright-core/1.26.0:
+    resolution: {integrity: sha512-p8huU8eU4gD3VkJd3DA1nA7R3XA6rFvFL+1RYS96cSljCF2yJE9CWEHTPF4LqX8KN9MoWCrAfVKP5381X3CZqg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
