@@ -4,7 +4,7 @@
     "test:watch": "PWDEBUG=console BASEURL=https://marmelab.com jest --watch "
   },
   "devDependencies": {
-    "@babel/core": "7.19.1",
+    "@babel/core": "7.19.3",
     "@types/jest": "27.5.2",
     "babel-jest": "27.5.1",
     "expect-playwright": "0.8.0",
