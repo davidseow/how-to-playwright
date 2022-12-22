@@ -10,7 +10,7 @@
     "expect-playwright": "0.8.0",
     "jest": "27.5.1",
     "jest-playwright-preset": "1.7.2",
-    "playwright": "1.29.0",
+    "playwright": "1.29.1",
     "typescript": "4.9.4"
   }
 }
