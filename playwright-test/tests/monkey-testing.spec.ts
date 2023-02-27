@@ -4,7 +4,7 @@ test.use({ storageState: "state.json" });
 
 const { beforeEach, describe, expect } = test;
 
-describe.skip("Monkey testing", () => {
+describe("Monkey testing", () => {
   let errors = [];
 
   beforeEach(async ({ page }) => {
