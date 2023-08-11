@@ -4,7 +4,7 @@
     "test:watch": "PWDEBUG=console DEBUG=pw:api npx playwright test --workers=1"
   },
   "devDependencies": {
-    "@playwright/test": "1.36.2",
+    "@playwright/test": "1.37.0",
     "@types/node": "18.17.4",
     "gremlins.js": "2.2.0"
   }
