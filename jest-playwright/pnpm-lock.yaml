@@ -7,7 +7,7 @@ specifiers:
   expect-playwright: 0.8.0
   jest: 27.5.1
   jest-playwright-preset: 1.7.2
-  playwright: 1.37.0
+  playwright: 1.37.1
   typescript: 5.1.6
 
 devDependencies:
@@ -17,7 +17,7 @@ devDependencies:
   expect-playwright: 0.8.0
   jest: 27.5.1
   jest-playwright-preset: 1.7.2_jest@27.5.1
-  playwright: 1.37.0
+  playwright: 1.37.1
   typescript: 5.1.6
 
 packages:
@@ -2614,19 +2614,19 @@ packages:
     hasBin: true
     dev: true
 
-  /playwright-core/1.37.0:
-    resolution: {integrity: sha512-1c46jhTH/myQw6sesrcuHVtLoSNfJv8Pfy9t3rs6subY7kARv0HRw5PpyfPYPpPtQvBOmgbE6K+qgYUpj81LAA==}
+  /playwright-core/1.37.1:
+    resolution: {integrity: sha512-17EuQxlSIYCmEMwzMqusJ2ztDgJePjrbttaefgdsiqeLWidjYz9BxXaTaZWxH1J95SHGk6tjE+dwgWILJoUZfA==}
     engines: {node: '>=16'}
     hasBin: true
     dev: true
 
-  /playwright/1.37.0:
-    resolution: {integrity: sha512-CrAEFfVioamMwDKmygc/HAkzEAxYAwjD+zod2poTxM7ObivkoDsKHu1ned16fnQV/Tf1kDB8KtsyH8Qd3VzJIg==}
+  /playwright/1.37.1:
+    resolution: {integrity: sha512-bgUXRrQKhT48zHdxDYQTpf//0xDfDd5hLeEhjuSw8rXEGoT9YeElpfvs/izonTNY21IQZ7d3s22jLxYaAnubbQ==}
     engines: {node: '>=16'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.37.0
+      playwright-core: 1.37.1
     dev: true
 
   /prelude-ls/1.1.2:
