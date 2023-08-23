@@ -2,12 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@playwright/test': 1.37.1
-  '@types/node': 18.17.7
+  '@types/node': 18.17.9
   gremlins.js: 2.2.0
 
 devDependencies:
   '@playwright/test': 1.37.1
-  '@types/node': 18.17.7
+  '@types/node': 18.17.9
   gremlins.js: 2.2.0
 
 packages:
@@ -17,14 +17,14 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@types/node': 18.17.7
+      '@types/node': 18.17.9
       playwright-core: 1.37.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /@types/node/18.17.7:
-    resolution: {integrity: sha512-WJj/p/cIg6zUsxv1n2leZHpvn8hr9TYuLQxAZxZcK/7+5t5ukmJGelOLGOy3L1MLhAO/sapTJGd1V7kvoIuzUg==}
+  /@types/node/18.17.9:
+    resolution: {integrity: sha512-fxaKquqYcPOGwE7tC1anJaPJ0GHyOVzfA2oUoXECjBjrtsIz4YJvtNYsq8LUcjEUehEF+jGpx8Z+lFrtT6z0tg==}
     dev: true
 
   /chance/1.1.8:
