@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': 7.22.10
-  '@types/jest': 29.5.3
+  '@types/jest': 29.5.4
   babel-jest: 27.5.1
   expect-playwright: 0.8.0
   jest: 27.5.1
@@ -12,7 +12,7 @@ specifiers:
 
 devDependencies:
   '@babel/core': 7.22.10
-  '@types/jest': 29.5.3
+  '@types/jest': 29.5.4
   babel-jest: 27.5.1_@babel+core@7.22.10
   expect-playwright: 0.8.0
   jest: 27.5.1
@@ -723,8 +723,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.5.3:
-    resolution: {integrity: sha512-1Nq7YrO/vJE/FYnqYyw0FS8LdrjExSgIiHyKg7xPpn+yi8Q4huZryKnkJatN1ZRH89Kw2v33/8ZMB7DuZeSLlA==}
+  /@types/jest/29.5.4:
+    resolution: {integrity: sha512-PhglGmhWeD46FYOVLt3X7TiWjzwuVGW9wG/4qocPevXMjCmrIc5b6db9WjeGE4QYVpUAWMDv3v0IiBwObY289A==}
     dependencies:
       expect: 29.6.3
       pretty-format: 29.6.3
