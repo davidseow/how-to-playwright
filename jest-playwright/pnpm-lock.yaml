@@ -8,7 +8,7 @@ specifiers:
   jest: 27.5.1
   jest-playwright-preset: 1.7.2
   playwright: 1.37.1
-  typescript: 5.1.6
+  typescript: 5.2.2
 
 devDependencies:
   '@babel/core': 7.22.11
@@ -18,7 +18,7 @@ devDependencies:
   jest: 27.5.1
   jest-playwright-preset: 1.7.2_jest@27.5.1
   playwright: 1.37.1
-  typescript: 5.1.6
+  typescript: 5.2.2
 
 packages:
 
@@ -3120,8 +3120,8 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /typescript/5.1.6:
-    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+  /typescript/5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
