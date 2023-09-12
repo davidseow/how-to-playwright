@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@babel/core': 7.22.17
   '@types/jest': 29.5.4
-  babel-jest: 29.6.4
+  babel-jest: 29.7.0
   expect-playwright: 0.8.0
   jest: 27.5.1
   jest-playwright-preset: 1.7.2
@@ -13,7 +13,7 @@ specifiers:
 devDependencies:
   '@babel/core': 7.22.17
   '@types/jest': 29.5.4
-  babel-jest: 29.6.4_@babel+core@7.22.17
+  babel-jest: 29.7.0_@babel+core@7.22.17
   expect-playwright: 0.8.0
   jest: 27.5.1
   jest-playwright-preset: 1.7.2_jest@27.5.1
@@ -569,8 +569,8 @@ packages:
       - supports-color
     dev: true
 
-  /@jest/transform/29.6.4:
-    resolution: {integrity: sha512-8thgRSiXUqtr/pPGY/OsyHuMjGyhVnWrFAwoxmIemlBuiMyU1WFs0tXoNxzcr4A4uErs/ABre76SGmrr5ab/AA==}
+  /@jest/transform/29.7.0:
+    resolution: {integrity: sha512-ok/BTPFzFKVMwO5eOHRrvnBVHdRy9IrsrW1GpMaQ9MCnilNLXQKmAX8s1YXDFaai9xJpac2ySzV0YeRRECr2Vw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@babel/core': 7.22.17
@@ -581,9 +581,9 @@ packages:
       convert-source-map: 2.0.0
       fast-json-stable-stringify: 2.1.0
       graceful-fs: 4.2.10
-      jest-haste-map: 29.6.4
+      jest-haste-map: 29.7.0
       jest-regex-util: 29.6.3
-      jest-util: 29.6.3
+      jest-util: 29.7.0
       micromatch: 4.0.5
       pirates: 4.0.5
       slash: 3.0.0
@@ -912,14 +912,14 @@ packages:
       - supports-color
     dev: true
 
-  /babel-jest/29.6.4_@babel+core@7.22.17:
-    resolution: {integrity: sha512-meLj23UlSLddj6PC+YTOFRgDAtjnZom8w/ACsrx0gtPtv5cJZk0A5Unk5bV4wixD7XaPCN1fQvpww8czkZURmw==}
+  /babel-jest/29.7.0_@babel+core@7.22.17:
+    resolution: {integrity: sha512-BrvGY3xZSwEcCzKvKsCi2GgHqDqsYkOP4/by5xCgIwGXQxIEh+8ew3gmrE1y7XRR6LHZIj6yLYnUi/mm2KXKBg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
       '@babel/core': ^7.8.0
     dependencies:
       '@babel/core': 7.22.17
-      '@jest/transform': 29.6.4
+      '@jest/transform': 29.7.0
       '@types/babel__core': 7.1.19
       babel-plugin-istanbul: 6.1.1
       babel-preset-jest: 29.6.3_@babel+core@7.22.17
@@ -2037,8 +2037,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /jest-haste-map/29.6.4:
-    resolution: {integrity: sha512-12Ad+VNTDHxKf7k+M65sviyynRoZYuL1/GTuhEVb8RYsNSNln71nANRb/faSyWvx0j+gHcivChXHIoMJrGYjog==}
+  /jest-haste-map/29.7.0:
+    resolution: {integrity: sha512-fP8u2pyfqx0K1rGn1R9pyE0/KTn+G7PxktWidOBTqFPLYX0b9ksaMFkhK5vrS3DVun09pckLdlx90QthlW7AmA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.3
@@ -2048,8 +2048,8 @@ packages:
       fb-watchman: 2.0.1
       graceful-fs: 4.2.10
       jest-regex-util: 29.6.3
-      jest-util: 29.6.3
-      jest-worker: 29.6.4
+      jest-util: 29.7.0
+      jest-worker: 29.7.0
       micromatch: 4.0.5
       walker: 1.0.8
     optionalDependencies:
@@ -2358,6 +2358,18 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /jest-util/29.7.0:
+    resolution: {integrity: sha512-z6EbKajIpqGKU56y5KBUgy1dt1ihhQJgWzUlZHArA/+X2ad7Cb5iF+AK1EWVL/Bo7Rz9uurpqw6SiBCefUbCGA==}
+    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+    dependencies:
+      '@jest/types': 29.6.3
+      '@types/node': 18.6.3
+      chalk: 4.1.2
+      ci-info: 3.3.2
+      graceful-fs: 4.2.10
+      picomatch: 2.3.1
+    dev: true
+
   /jest-validate/27.5.1:
     resolution: {integrity: sha512-thkNli0LYTmOI1tDB3FI1S1RTp/Bqyd9pTarJwL87OIBFuqEb5Apv5EaApEudYg4g86e3CT6kM0RowkhtEnCBQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
@@ -2392,12 +2404,12 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest-worker/29.6.4:
-    resolution: {integrity: sha512-6dpvFV4WjcWbDVGgHTWo/aupl8/LbBx2NSKfiwqf79xC/yeJjKHT1+StcKy/2KTmW16hE68ccKVOtXf+WZGz7Q==}
+  /jest-worker/29.7.0:
+    resolution: {integrity: sha512-eIz2msL/EzL9UFTFFx7jBTkeZfku0yUAyZZZmJ93H2TYEiroIx2PQjEXcwYtYl8zXCxb+PAmA2hLIt/6ZEkPHw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@types/node': 18.6.3
-      jest-util: 29.6.3
+      jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
