@@ -2,12 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@playwright/test': 1.37.1
-  '@types/node': 20.8.8
+  '@types/node': 20.8.10
   gremlins.js: 2.2.0
 
 devDependencies:
   '@playwright/test': 1.37.1
-  '@types/node': 20.8.8
+  '@types/node': 20.8.10
   gremlins.js: 2.2.0
 
 packages:
@@ -17,16 +17,16 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@types/node': 20.8.8
+      '@types/node': 20.8.10
       playwright-core: 1.37.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /@types/node/20.8.8:
-    resolution: {integrity: sha512-YRsdVxq6OaLfmR9Hy816IMp33xOBjfyOgUd77ehqg96CFywxAPbDbXvAsuN2KVg2HOT8Eh6uAfU+l4WffwPVrQ==}
+  /@types/node/20.8.10:
+    resolution: {integrity: sha512-TlgT8JntpcbmKUFzjhsyhGfP2fsiz1Mv56im6enJ905xG1DAYesxJaeSbGqQmAw8OWPdhyJGhGSQGKRNJ45u9w==}
     dependencies:
-      undici-types: 5.25.3
+      undici-types: 5.26.5
     dev: true
 
   /chance/1.1.8:
@@ -59,6 +59,6 @@ packages:
     hasBin: true
     dev: true
 
-  /undici-types/5.25.3:
-    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
+  /undici-types/5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
