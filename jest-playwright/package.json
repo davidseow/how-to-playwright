@@ -9,7 +9,7 @@
     "babel-jest": "29.7.0",
     "expect-playwright": "0.8.0",
     "jest": "27.5.1",
-    "jest-playwright-preset": "1.7.2",
+    "jest-playwright-preset": "3.0.1",
     "playwright": "1.37.1",
     "typescript": "5.2.2"
   }
