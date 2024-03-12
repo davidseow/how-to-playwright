@@ -2,12 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@playwright/test': 1.37.1
-  '@types/node': 20.11.25
+  '@types/node': 20.11.26
   gremlins.js: 2.2.0
 
 devDependencies:
   '@playwright/test': 1.37.1
-  '@types/node': 20.11.25
+  '@types/node': 20.11.26
   gremlins.js: 2.2.0
 
 packages:
@@ -17,14 +17,14 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
-      '@types/node': 20.11.25
+      '@types/node': 20.11.26
       playwright-core: 1.37.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /@types/node/20.11.25:
-    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
+  /@types/node/20.11.26:
+    resolution: {integrity: sha512-YwOMmyhNnAWijOBQweOJnQPl068Oqd4K3OFbTc6AHJwzweUwwWG3GIFY74OKks2PJUDkQPeddOQES9mLn1CTEQ==}
     dependencies:
       undici-types: 5.26.5
     dev: true
