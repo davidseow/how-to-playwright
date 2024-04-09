@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.37.1",
-    "@types/node": "20.12.5",
+    "@types/node": "20.12.6",
     "gremlins.js": "2.2.0"
   }
 }
