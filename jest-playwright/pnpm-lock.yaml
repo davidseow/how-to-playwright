@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': 7.23.2
@@ -8,7 +8,7 @@ specifiers:
   jest: 27.5.1
   jest-playwright-preset: 1.7.2
   playwright: 1.37.1
-  typescript: 5.2.2
+  typescript: 5.9.3
 
 devDependencies:
   '@babel/core': 7.23.2
@@ -18,7 +18,7 @@ devDependencies:
   jest: 27.5.1
   jest-playwright-preset: 1.7.2_jest@27.5.1
   playwright: 1.37.1
-  typescript: 5.2.2
+  typescript: 5.9.3
 
 packages:
 
@@ -3220,8 +3220,8 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
-  /typescript/5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+  /typescript/5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
